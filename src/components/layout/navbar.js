@@ -1,17 +1,41 @@
 import Link from 'next/link'
+import {BsChevronDown} from 'react-icons/bs'
 
 function Navbar() {
   return (
-    <div className="flex justify-between px-8 py-4 md:px-12 lg:px-16 text-skin-inverted bg-skin-fill">
-      <Link href="/home" className="cursor-pointer">
-        <a className="flex items-center">
-          <p>Logo Here</p>
-        </a>
-      </Link>
-      <div className="hidden space-x-8 md:flex text-normal md:text-xl">
-        <Link href="/booking">Booking</Link>
-        <Link href="/batches">Find Batch</Link>
-        <Link href="/settings">Setting</Link>
+    <div className=" w-full flex justify-between items-center px-32 py-5" >
+      <div className="flex items-center space-x-14">
+        <Link href="/home" className="cursor-pointer">
+          <a className="flex items-center text-red-500 space-x-3">
+            <p className="text-5xl font-semibold ">Juno </p>
+            <div className="capitalize">
+              <p className="text-sm">formerly </p>
+              <p className="text-sm">hackeryou </p>
+            </div>
+          </a>
+        </Link>
+
+        <div className="flex items-center space-x-14">
+          <Link href="/booking">Free Events</Link>
+
+          <Link href="/booking">
+            <a className="flex items-center space-x-2">
+             <p>
+           courses  
+              </p>
+              <BsChevronDown className="w-3 h-3"/>
+            </a>
+          </Link>
+
+          <Link href="/batches">Bootcamps</Link>
+          <Link href="/settings">About</Link>
+          <Link href="/settings">ForCompanies</Link>
+        </div>
+      </div>
+      <div>
+        <button className="bg-red-500 text-white px-4 py-2 capitalize">
+          apply now
+</button>
       </div>
     </div>
   )
