@@ -165,6 +165,16 @@ function Navbar() {
     </div>
 
 
+<<<<<<< HEAD
+=======
+           </div>
+           
+         </div>
+         <div></div>
+     </div>
+    
+    
+>>>>>>> 72ce577314b85eab22620a408459828ad39531ce
   )
 }
 
